@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "module": "esnext",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "baseUrl": "./src",
+    "paths": {
+      "@appEnvironments/*": ["environments/*"],
+      "@appContainers/*": ["app/containers/*"],
+      "@appComponents/*": ["app/components/*"],
+      "@appServices/*": ["app/services/*"],
+      "@appStore/*": ["app/store/*"],
+      "@appGuards/*": ["app/guards/*"],
+      "@appModels/*": ["app/models/*"],
+      "@appAuthentication/*": ["app/authentication/*"],
+      "@appHttp/*": ["app/http/*"]
+    },
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"]
+  }
+}

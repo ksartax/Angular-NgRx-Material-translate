@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$ngrx-primary: mat-palette($mat-indigo);
+$ngrx-accent: mat-palette($mat-pink, A200, A100, A400);
+$ngrx-warn: mat-palette($mat-red);
+$ngrx-theme: mat-light-theme($ngrx-primary, $ngrx-accent, $ngrx-warn);
+
+@include angular-material-theme($ngrx-theme);
+
+// Dark theme
+.dark-theme {
+    color: $light-primary-text;
+    $dark-primary: mat-palette($mat-yellow);
+    $dark-accent: mat-palette($mat-amber, A400, A100, A700);
+    $dark-warn: mat-palette($mat-red);
+    $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+    @include angular-material-theme($dark-theme);
+}

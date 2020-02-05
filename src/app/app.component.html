@@ -1,0 +1,15 @@
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h3 style="color: white" translate>title</h3>
+      <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
+        Dark theme
+      </mat-slide-toggle>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

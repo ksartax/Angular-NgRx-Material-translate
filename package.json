@@ -63,7 +63,7 @@
     "jasmine-marbles": "^0.4.1",
     "jest": "24.3.1",
     "jest-preset-angular": "7.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "phantomjs-prebuilt": "^2.1.16",
     "protractor": "~5.4.1",
     "rxjs-compat": "^6.3.3",
